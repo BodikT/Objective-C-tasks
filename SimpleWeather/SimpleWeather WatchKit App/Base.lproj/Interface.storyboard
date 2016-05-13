@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E7f" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="136" alignment="left" text="Weather in London" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="BhF-c9-Ef9">
+                            <variation key="device=watch42mm" width="156"/>
+                        </label>
+                        <imageView width="136" height="85" alignment="left" id="Xy1-fP-Lsf">
+                            <variation key="device=watch42mm" height="107" width="156"/>
+                        </imageView>
+                        <button width="1" alignment="left" title="Update" id="4jn-SH-GvA">
+                            <color key="backgroundColor" red="0.18823529411764706" green="0.7686274509803922" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="updateAction" destination="AgC-eL-Hgc" id="5bw-8N-Pay"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="weatherImage" destination="Xy1-fP-Lsf" id="Q7a-J3-3lx"/>
+                        <outlet property="weatherType" destination="BhF-c9-Ef9" id="ybP-i1-LtU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="244" y="323"/>
+        </scene>
+    </scenes>
+</document>
